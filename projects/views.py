@@ -8,7 +8,7 @@ from projects.forms import ProjectForm
 
 @login_required
 def list_projects(request):
-    projects = Project.objects.filter(owner=request.user)
+    projects = Project.objects.filter(owner=request.user).order_by("name")
     context = {
         "projects": projects,
     }
