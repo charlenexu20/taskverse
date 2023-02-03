@@ -2,20 +2,30 @@ from django import forms
 
 
 class LoginForm(forms.Form):
-    username = forms.CharField(max_length=150)
+    username = forms.CharField(
+        max_length=150,
+        widget=forms.TextInput(
+            attrs={
+                "placeholder": "Username*",
+            },
+        ),
+    )
     password = forms.CharField(
         max_length=150,
-        widget=forms.PasswordInput(),
+        widget=forms.PasswordInput(attrs={"placeholder": "Password*"}),
     )
 
 
 class SignUpForm(forms.Form):
-    username = forms.CharField(max_length=150)
+    username = forms.CharField(
+        max_length=150,
+        widget=forms.TextInput(attrs={"placeholder": "Username*"}),
+    )
     password = forms.CharField(
         max_length=150,
-        widget=forms.PasswordInput(),
+        widget=forms.PasswordInput(attrs={"placeholder": "Password*"}),
     )
     password_confirmation = forms.CharField(
         max_length=150,
-        widget=forms.PasswordInput(),
+        widget=forms.PasswordInput(attrs={"placeholder": "Confirm Password*"}),
     )
