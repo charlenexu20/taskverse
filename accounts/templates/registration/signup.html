@@ -2,12 +2,12 @@
 
 {% block content %}
     <main>
-        <div>
-            <h1>Signup</h1>
+        <div class="signup-form">
+            <h1>Sign up</h1>
             <form method="post">
                 {% csrf_token %}
                 {{ form.as_p }}
-                <button>Signup</button>
+                <button>Create an Account</button>
             </form>
         </div>
     </main>
