@@ -1,0 +1,128 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+
+</head>
+<body>
+    <header>
+        <div class='container'>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    {% comment %} <img src="https://www.kindpng.com/picc/m/738-7381587_transparent-project-management-icon-white-hd-png-download.png" alt="Transparent Project Management Icon White, HD Png Download@kindpng.com"> {% endcomment %}
+                    <a class="navbar-brand" href="#" style="color: #303E48; font-weight: bold; font-size: 24px;">TASKVERSE</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{% url 'home_page' %}">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'list_projects' %}">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'show_my_tasks' %}">Tasks</a>
+                    </li>
+
+                    </ul>
+                    <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section id='intro'>
+        <div class='jumbotron'>
+            <div class='container'>
+                <div class='row'>
+                    <div class='col-md-12 text-center'>
+                        <h1>Manage All Of Your Work In One Place</h1>
+                        <p class='lead'>Manage your work, timelines and team mates all at once.</p>
+                        <a class='btn' href="{% url 'signup' %}">Sign Up</a>
+                        <a class='btn' href="{% url 'login' %}">Login</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id='second'>
+        <div class='container'>
+            <div class='row'>
+                <div class='col-md-8 offset-md-2 text-center'>
+                    <h2>Plan, execute, and track projects</h2>
+                    <div class='col-md-12 text-left'>
+                        <p>Easily assign tasks and prioritize what's most important to your team. Set project timelines and milestones, track progress, and manage your team’s entire workload all in one place.</p>
+                    </div>
+                </div>
+                <div class='col-md-8 offset-md-2 text-center'>
+                    <h2>The platform your team will love to use</h2>
+                    <div class='col-md-12 text-left'>
+                        <p>Collaborate seamlessly across teams and departments to gain visibility into the progress of your work. Keep everyone aligned with a platform they will enjoy using to ensure a smoother execution.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="third">
+        <div class='container'>
+            <div class='row'>
+                <div class='col-md-12 text-center'>
+                    <h2>Manage any project, your way
+                    </h2>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='col-md-4'>
+                    <img src="https://images.pexels.com/photos/7430339/pexels-photo-7430339.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Planning">
+                </div>
+                <div class='col-md-4'>
+                    <img src="https://images.pexels.com/photos/7439134/pexels-photo-7439134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Working Together
+                    ">
+                </div>
+                <div class='col-md-4'>
+                    <img src="https://images.pexels.com/photos/7439137/pexels-photo-7439137.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Working Together
+                    ">
+                </div>
+            </div>
+        </div>
+    </section>
+    {% comment %} <section id='email'>
+        <div class='container'>
+            <div class='row'>
+                <div class='col-md-8 offset-md-2'>
+                    <h3>Keep in touch</h3>
+                </div>
+            </div>
+            <div class='row'></div>
+                <div class='col-md-8 offset-md-2'>
+                    <p>hello</p>
+                </div>
+        </div>
+    </section> {% endcomment %}
+    <footer>
+        <div class='container'>
+            <div class='row'>
+                    <p>©2023 TASKVERSE, Made by Charlene.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

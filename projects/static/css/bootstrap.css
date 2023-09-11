@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@600&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Raleway', sans-serif;
+    color: #303E48;
+}
+
+html,
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #303E48;
+
+}
+
+.btn {
+    background: #303E48;
+    color: #fffefc;
+    padding: 9px 26px;
+    border-radius: 5px;
+}
+
+#intro .jumbotron {
+    height: 45vh;
+}
+
+#intro h1 {
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+#intro .lead p {
+    text-align: left;
+}
+
+/* Center elements vertically */
+#intro .container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.jumbotron {
+    padding: 8rem 10rem;
+    margin-bottom: 2rem;
+    background-color: #e4f0f7;
+    /* background-color: #e9ecef; */
+    border-radius: .3rem;
+}
+
+header nav img {
+    width: 100px;
+}
+
+header li {
+    margin: 0 12px;
+}
+
+#second {
+    padding: 80px 0px;
+}
+
+.row p {
+    padding: 20px;
+    margin: 1em;
+}
+
+.row img {
+    width: 300px;
+    padding: 10px;
+    margin: 30px 30px;
+}
+
+/* #second .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    padding: 20px;
+}
+
+#third .container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    padding: 20px;
+} */
+
+#second .container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+#third .container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    padding: 30px;
+    margin-top: 100px;
+}
+
+#third h2 {
+    margin-top: 30px;
+}
+
+footer {
+    border-top: solid 1px #303E48;
+    padding: 80px 0px;
+    margin-top: 100px;
+    background-color: #303E48;
+    color: #fffefc;
+    text-align: center;
+}

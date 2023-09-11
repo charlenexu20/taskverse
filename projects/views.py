@@ -39,3 +39,7 @@ def create_project(request):
         "form": form,
     }
     return render(request, "projects/create.html", context)
+
+
+def home_page(request):
+    return render(request, "projects/home.html")

@@ -49,6 +49,7 @@ header nav ul li a {
     color: #303E48;
     float: none;
     width: 100%;
+    font-weight: bold;
 }
 
 header nav ul li a:hover {
